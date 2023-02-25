@@ -3,7 +3,7 @@
   <div class="_container">
     <div class="nav">
       <div class="_row">
-      <div class="_logo"><img src="@/assets/img/logo.png" alt="Logo"></div>
+      <img src="@/assets/img/logo.png" alt="Logo">
         <div class="nav-column">
           <h3>{{ $i18n('nav.logoTitle') }}</h3>
           <h5>{{ $i18n('nav.logoDesc') }}</h5>
@@ -43,7 +43,6 @@ onMounted(() => document.documentElement.lang = curLang)
   align-items: center;
   top: 0;
   width: 100%;
-  height: 60px;
   z-index: 8;
   background-color: var(--tp-c);
   backdrop-filter: blur(8px);
@@ -62,8 +61,14 @@ onMounted(() => document.documentElement.lang = curLang)
 .nav {
   display: flex;
   width: 100%;
+  height: var(--nav-height);
   justify-content: space-between;
   gap: var(--space);
   padding: var(--space);
+
+  img {
+    max-height: 33px;
+    width: auto;
+  }
 }
 </style>

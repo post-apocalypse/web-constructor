@@ -1,16 +1,21 @@
 {
   "globals": {
+    "RouterView": true,
     "axios": true,
     "computed": true,
+    "defineStore": true,
     "inject": true,
     "onMounted": true,
     "reactive": true,
     "ref": true,
+    "useCoreStore": true,
     "useDark": true,
     "useEventListener": true,
     "useImage": true,
     "useNavigatorLanguage": true,
+    "useNotfStore": true,
     "useResizeObserver": true,
+    "useRouter": true,
     "useStorage": true,
     "watch": true
   }

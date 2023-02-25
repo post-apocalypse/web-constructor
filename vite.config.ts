@@ -12,6 +12,8 @@ export default defineConfig({
       imports: [
         {
           'vue': ['ref', 'computed', 'watch', 'reactive', 'onMounted', 'inject'],
+          'pinia': ['defineStore'],
+          'vue-router': ['useRouter', 'RouterView'],
           'axios': [
             ['default', 'axios'],
           ],
@@ -31,7 +33,6 @@ export default defineConfig({
       dts: './types/imports.d.ts',
       defaultExportByFilename: true,
       dirs: [
-        './src/utils',
         './src/stores'
       ]
     }),

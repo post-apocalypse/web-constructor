@@ -71,6 +71,15 @@ label {
   }
 }
 
+/* Transitions */
+
+.main {
+  &-enter-from { opacity: 0; }
+  &-enter-active { transition: all 0.2s ease-out; }
+  &-leave-to { opacity: 0; }
+  &-leave-active { transition: all 0.2s ease-in; }
+}
+
 /* Pseudo-Elements */
 
 ::selection { background-color: #4f13af33; }
@@ -116,13 +125,6 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-._tp-wp {
-  background-color: var(--tp-c);
-  backdrop-filter: blur(8px);
-  padding: var(--space);
-  border-radius: var(--br-rad);
 }
 
 ._bg-wp {

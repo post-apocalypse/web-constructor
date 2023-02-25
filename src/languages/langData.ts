@@ -1,5 +1,11 @@
 export default {
   en: {
+    route: {
+      home: 'Home',
+      generator: 'Builder',
+      library: 'About project',
+      notFound: 'You are lost!'
+    },
     nav: {
       logoTitle: 'Web Builder',
       logoDesc: 'Design app',
@@ -11,6 +17,12 @@ export default {
     },
   },
   ru: {
+    route: {
+      home: 'Главная',
+      generator: 'Конструктор',
+      library: 'О проекте',
+      notFound: 'Вы потерялись!'
+    },
     nav: {
       logoTitle: 'Веб-конструктор',
       logoDesc: 'Приложение-конструктор',

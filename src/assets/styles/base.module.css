@@ -1,11 +1,8 @@
 :root {
   /* Colors */
-  --accent-c: rgb(80, 41, 131);
-  --accent-c-h: rgba(80, 41, 131, 0.7);
-  --circle-c: rgb(132, 219, 255);
-  --circle-c-tp: rgba(132, 219, 255, 0.7);
-  --action-size: 250px;
-  --action-size-mob: 150px;
+  --accent-c: rgb(255, 122, 56);
+  --accent-c-h: rgba(255, 122, 56, 0.7);
+  --nav-height: 65px;
 
   /* --darkTheme */
   --dark-bg-c: #242424;
