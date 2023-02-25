@@ -10,13 +10,24 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ConstructorView: typeof import('./../src/components/ConstructorView.vue')['default']
+    EmailIcon: typeof import('./../src/assets/svg/EmailIcon.vue')['default']
+    GitHubIcon: typeof import('./../src/assets/svg/GitHubIcon.vue')['default']
     HelloWorld: typeof import('./../src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./../src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./../src/components/icons/IconDocumentation.vue')['default']
     IconEcosystem: typeof import('./../src/components/icons/IconEcosystem.vue')['default']
     IconSupport: typeof import('./../src/components/icons/IconSupport.vue')['default']
     IconTooling: typeof import('./../src/components/icons/IconTooling.vue')['default']
+    NavContacts: typeof import('./../src/components/Navbar/NavContacts.vue')['default']
+    NavGalleryOptions: typeof import('./../src/components/Navbar/NavGalleryOptions.vue')['default']
+    NavMenuIcon: typeof import('./../src/components/Navbar/NavMenuIcon.vue')['default']
+    NavMobMenu: typeof import('./../src/components/Navbar/NavMobMenu.vue')['default']
+    NavThemeSwitcher: typeof import('./../src/components/Navbar/NavThemeSwitcher.vue')['default']
+    TelegramIcon: typeof import('./../src/assets/svg/TelegramIcon.vue')['default']
+    TheNavbar: typeof import('./../src/components/Navbar/TheNavbar.vue')['default']
+    TheSelect: typeof import('./../src/components/TheSelect.vue')['default']
     TheWelcome: typeof import('./../src/components/TheWelcome.vue')['default']
+    TranslateIcon: typeof import('./../src/assets/svg/TranslateIcon.vue')['default']
     WelcomeItem: typeof import('./../src/components/WelcomeItem.vue')['default']
   }
 }

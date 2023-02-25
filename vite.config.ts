@@ -45,9 +45,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Plane of Euthymia',
-        short_name: 'Plane of Euthymia',
-        description: 'Gallery for fast loading and comfortable viewing of images',
+        name: 'Web Builder',
+        short_name: 'Web Builder',
+        description: 'Just small web builder',
         theme_color: '#242424',
         icons: [
           {
