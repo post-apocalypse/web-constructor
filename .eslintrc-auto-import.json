@@ -1,0 +1,17 @@
+{
+  "globals": {
+    "axios": true,
+    "computed": true,
+    "inject": true,
+    "onMounted": true,
+    "reactive": true,
+    "ref": true,
+    "useDark": true,
+    "useEventListener": true,
+    "useImage": true,
+    "useNavigatorLanguage": true,
+    "useResizeObserver": true,
+    "useStorage": true,
+    "watch": true
+  }
+}
