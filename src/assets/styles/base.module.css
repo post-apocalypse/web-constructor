@@ -2,6 +2,8 @@
   /* Colors */
   --accent-c: rgb(255, 122, 56);
   --accent-c-h: rgba(255, 122, 56, 0.7);
+  --template-size: 250px;
+  --template-size-mob: 150px;
   --nav-height: 65px;
 
   /* --darkTheme */

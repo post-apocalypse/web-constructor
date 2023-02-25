@@ -2,12 +2,12 @@
 <section class="templates">
   <div class="templates-container">
     <div class="templates-wrapper">
-      <RouterLink to="/generator" class="templates-new" :title="$i18n('home.new')">
+      <RouterLink to="/builder" class="templates-new" title="$i18n('home.new')">
         <CreateIcon />
         <h3>{{ $i18n('home.create') }}</h3>
       </RouterLink>
-      <RouterLink v-for="(temp, idx) in templates" :to="temp.path" :title="$i18n('home.temp')">
-        <TheTemplate :idx="idx" :link="temp.href" @del-temp="(idx) => templates.splice(idx, 1)">
+      <RouterLink v-for="(temp, idx) in templates" :key="idx" :to="temp.path" title="$i18n('home.temp')">
+        <TheTemplate :idx="idx" :link="temp.href" @del-temp="(idx: any) => templates.splice(idx, 1)">
           <template #codename><h3>{{ temp.name }}</h3></template>
           <template #desc><p>{{ temp.desc ? temp.desc : $i18n('home.noDesc') }}</p></template>
           <template #date><small>{{ temp.date }}</small></template>
@@ -23,8 +23,8 @@
 </section>
 </template>
 
-<script setup>
-const { templates } = useDataStore()
+<script setup lang="ts">
+const { templates } = useCoreStore()
 </script>
 
 <style scoped lang="scss">

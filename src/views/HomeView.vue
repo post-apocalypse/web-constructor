@@ -1,7 +1,7 @@
 <template>
 <div class="_wrapper">
   <TheHomeSection />
-  <!-- <TheTemplatesSection />
-  <TheCopyright /> -->
+  <TheTemplatesSection />
+  <TheCopyright />
 </div>
 </template>

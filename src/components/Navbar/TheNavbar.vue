@@ -2,13 +2,13 @@
 <nav ref="navSize" class="nav-wrapper">
   <div class="_container">
     <div class="nav">
-      <div class="_row">
-      <img src="@/assets/img/logo.png" alt="Logo">
+      <RouterLink to="/" class="_row" title="На главную">
+        <img src="@/assets/img/logo.png" alt="Logo">
         <div class="nav-column">
           <h3>{{ $i18n('nav.logoTitle') }}</h3>
           <h5>{{ $i18n('nav.logoDesc') }}</h5>
         </div>
-      </div>
+      </RouterLink>
       <div v-if="width > 900" class="_row">
         <NavThemeSwitcher />
         <div class="_br"></div>
