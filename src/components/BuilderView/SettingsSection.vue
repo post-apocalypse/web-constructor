@@ -1,21 +1,20 @@
 <template>
   <div class="setting-wrapper">
-    <div class="settings _content-wp">
+    <div class="settings">
       <small>Настройки</small>
     </div>
   </div>
 </template>
-
+  
 <style scoped lang="scss">
 .setting-wrapper {
-  width: 300px;
+  width: 30%;
   height: 100%;
 }
 
 .settings {
   height: 100%;
-  background-color: var(--wrapper-c);
+  border-right: 1px solid rgba(128, 128, 128, 0.5);
   padding: var(--space);
-  border-radius: var(--br-rad);
 }
 </style>
