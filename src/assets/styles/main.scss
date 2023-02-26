@@ -80,6 +80,17 @@ label {
   &-leave-active { transition: all 0.2s ease-in; }
 }
 
+.group {
+  &-enter-active, &-leave-active {
+    transition: all 0.5s ease;
+  }
+
+  &-enter-from, &-leave-to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
 /* Pseudo-Elements */
 
 ::selection { background-color: #4f13af33; }
@@ -127,6 +138,12 @@ label {
   align-items: center;
 }
 
+._content-wp {
+  background-color: var(--wrapper-c);
+  padding: var(--space);
+  border-radius: var(--br-rad);
+}
+
 ._bg-wp {
   background-color: var(--bg-c);
   padding: var(--space);
@@ -155,6 +172,11 @@ label {
   filter: contrast(0.5);
   cursor: default;
   pointer-events: none;
+}
+
+._wrap {
+  flex-wrap: wrap;
+  word-wrap: break-word;
 }
 
 ._i {
@@ -187,4 +209,10 @@ label {
   background-color: rgba(128, 128, 128, 0.5);
   width: 1px;
   height: 100%;
+}
+
+._hr {
+  background-color: rgba(128, 128, 128, 0.5);
+  height: 1px;
+  width: 100%;
 }

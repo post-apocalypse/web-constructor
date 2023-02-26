@@ -11,4 +11,5 @@ declare module 'vue' {
 declare global {
   export interface LangFunc { (key: string): string }
   export interface LangProps { [key: string]: any }
+  export interface Template { path: string, href: string, desc: string, date: string, name: string }
 }

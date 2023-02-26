@@ -10,6 +10,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppHotifications: typeof import('./../src/components/AppHotifications.vue')['default']
+    ArrowIcon: typeof import('./../src/assets/svg/ArrowIcon.vue')['default']
     ComponentIcon: typeof import('./../src/assets/svg/ComponentIcon.vue')['default']
     ConstructorSettings: typeof import('../src/components/BuilderView/SettingsSection.vue')['default']
     ConstructorView: typeof import('../src/components/BuilderView/LayoutSection.vue')['default']
@@ -40,7 +41,7 @@ declare module '@vue/runtime-core' {
     TheHomeSection: typeof import('./../src/components/HomeView/TheHomeSection.vue')['default']
     TheLibrarySection: typeof import('./../src/components/HomeView/TheLibrarySection.vue')['default']
     TheNavbar: typeof import('./../src/components/Navbar/TheNavbar.vue')['default']
-    TheSelect: typeof import('./../src/components/TheSelect.vue')['default']
+    TheSelect: typeof import('./../src/components/BuilderView/TheSelect.vue')['default']
     TheTemplate: typeof import('./../src/components/HomeView/TheTemplate.vue')['default']
     TheTemplatesSection: typeof import('./../src/components/HomeView/TheTemplatesSection.vue')['default']
     TheWelcome: typeof import('./../src/components/TheWelcome.vue')['default']

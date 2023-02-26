@@ -1,6 +1,6 @@
 <template>
 <div class="notifications _column">
-  <TransitionGroup name="notf">
+  <TransitionGroup name="group">
     <div v-for="item in notifications" :key="item" class="_tp-wp">
       <small>{{ item }}</small>
     </div>
@@ -20,16 +20,5 @@ const { notifications } = useNotfStore()
   top: 60px;
   right: 0;
   z-index: 10;
-}
-
-.notf {
-  &-enter-active, &-leave-active {
-    transition: all 0.5s ease;
-  }
-
-  &-enter-from, &-leave-to {
-    opacity: 0;
-    transform: translateX(30px);
-  }
 }
 </style>
